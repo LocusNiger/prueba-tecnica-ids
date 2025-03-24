@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --font-azeret-mono: "Azeret Mono", monospace;
+  --font-manrope: "Manrope", sans-serif;
+}
