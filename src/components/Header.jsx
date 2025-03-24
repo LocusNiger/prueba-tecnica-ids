@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { FaChevronDown, FaWallet } from "react-icons/fa";
+import { CgMenuRight } from "react-icons/cg";
 
 const Header = () => {
   const navItems = [
     { name: "Home", hasDropdown: true, active: true },
-    { name: "About Us", hasDropdown: false, active: false },
+    { name: "About us", hasDropdown: false, active: false },
     { name: "Explore", hasDropdown: true, active: false },
     { name: "Pages", hasDropdown: true, active: false },
     { name: "Blog", hasDropdown: false, active: false },
@@ -40,7 +41,7 @@ const Header = () => {
         {navItems.map((item) => (
           <div key={item.name} className="relative">
             <button
-              className={`flex items-center gap-1 font-medium transition-all hover:cursor-pointer  ${
+              className={`flex items-center gap-1 font-normal transition-all hover:cursor-pointer  ${
                 item.active
                   ? "text-[#e4ff40]"
                   : "text-white hover:text-gray-200"
@@ -48,7 +49,13 @@ const Header = () => {
               onClick={() => item.hasDropdown && toggleDropdown(item.name)}
             >
               {item.name}{" "}
-              {item.hasDropdown && <FaChevronDown className="h-3 w-3 ml-1" />}
+              {item.hasDropdown && (
+                <FaChevronDown
+                  className={`h-2.5 w-2.5 ml-1 ${
+                    item.active ? "text-[#e4ff40]" : "text-[#5c5c5c] "
+                  }`}
+                />
+              )}
             </button>
             {item.hasDropdown && activeDropdown === item.name && (
               <div className="absolute mt-2 py-2 w-48 bg-[#222222] rounded-md shadow-lg z-10">
@@ -77,9 +84,12 @@ const Header = () => {
       </nav>
 
       {/* Wallet connect button */}
-      <button className="bg-[#e4ff40] text-black font-medium py-2 px-6 rounded-full flex items-center gap-2">
-        Wallet Connect <FaWallet className="h-4 w-4" />
-      </button>
+      <div className="flex items-center gap-8">
+        <button className="bg-[#DDF247] text-black font-medium py-2 px-5 rounded-xl flex items-center gap-2.5">
+          Wallet Connect <FaWallet className="h-4 w-4" />
+        </button>
+        <CgMenuRight className="text-white w-7 h-7" />
+      </div>
     </header>
   );
 };
