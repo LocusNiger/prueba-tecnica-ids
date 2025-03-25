@@ -27,8 +27,10 @@ const Footer = () => {
           {/* Columnas */}
           {/* Marketplace */}
           <div>
-            <h3 className="text-white font-medium text-lg mb-4">Marketplace</h3>
-            <ul className="space-y-2 text-[#FFFFFF87]">
+            <h3 className="text-white font-manrope font-medium text-lg mb-4">
+              Marketplace
+            </h3>
+            <ul className="space-y-2 text-[#FFFFFF87] font-azeret-mono text-sm font-normal">
               <li>
                 <a href="#" className="hover:text-white transition">
                   All NFTs
@@ -64,8 +66,10 @@ const Footer = () => {
 
           {/* Resource */}
           <div>
-            <h3 className="text-white font-medium text-lg mb-4">Resource</h3>
-            <ul className="space-y-2 text-[#FFFFFF87]">
+            <h3 className="text-white font-manrope font-medium text-lg mb-4">
+              Resource
+            </h3>
+            <ul className="space-y-2 text-[#FFFFFF87] font-azeret-mono text-sm font-normal">
               <li>
                 <a href="#" className="hover:text-white transition">
                   Help center
@@ -101,8 +105,10 @@ const Footer = () => {
 
           {/* Account */}
           <div>
-            <h3 className="text-white font-medium text-lg mb-4">Account</h3>
-            <ul className="space-y-2 text-[#FFFFFF87]">
+            <h3 className="text-white mb-4 font-manrope font-medium text-lg">
+              Account
+            </h3>
+            <ul className="space-y-2 text-[#FFFFFF87] font-azeret-mono text-sm font-normal">
               <li>
                 <a href="#" className="hover:text-white transition">
                   Authors
@@ -138,8 +144,10 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h3 className="text-white font-medium text-lg mb-4">Company</h3>
-            <ul className="space-y-2 text-[#FFFFFF87]">
+            <h3 className="text-white font-medium text-lg mb-4 font-manrope">
+              Company
+            </h3>
+            <ul className="space-y-2 text-[#FFFFFF87] font-azeret-mono text-sm font-normal">
               <li>
                 <a href="#" className="hover:text-white transition">
                   Help center
@@ -153,7 +161,7 @@ const Footer = () => {
             </ul>
 
             <div className="mt-8">
-              <h3 className="text-white font-medium text-lg mb-4">
+              <h3 className="text-white mb-4 font-manrope font-medium text-lg">
                 Join the community
               </h3>
               <div className="flex space-x-2.5 max-w-[180px]">
@@ -197,19 +205,19 @@ const Footer = () => {
 
         {/* 2da section (abajo) */}
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="text-sm mb-4 md:mb-0 text-[#FFFFFF87]">
+          <div className="text-sm mb-4 md:mb-0 text-[#FFFFFF87] font-azeret-mono font-normal">
             © 2023 OpeN9 - Made By Themesflat
           </div>
           <div className="flex space-x-6">
             <a
               href="#"
-              className="text-sm hover:text-white transition text-[#FFFFFF87]"
+              className="font-azeret-mono text-sm font-normal hover:text-white transition text-[#FFFFFF87]"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="text-sm hover:text-white transition text-[#FFFFFF87]"
+              className="font-azeret-mono text-sm font-normal hover:text-white transition text-[#FFFFFF87]"
             >
               Terms of Service
             </a>
