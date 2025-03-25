@@ -41,7 +41,7 @@ const Header = () => {
         {navItems.map((item) => (
           <div key={item.name} className="relative">
             <button
-              className={`flex items-center gap-1 font-normal transition-all hover:cursor-pointer  ${
+              className={`flex items-center gap-1 font-medium font-manrope text-base transition-all hover:cursor-pointer  ${
                 item.active
                   ? "text-[#e4ff40]"
                   : "text-white hover:text-gray-200"
@@ -61,19 +61,19 @@ const Header = () => {
               <div className="absolute mt-2 py-2 w-48 bg-[#222222] rounded-md shadow-lg z-10">
                 <a
                   href="#"
-                  className="block px-4 py-2 text-sm text-white hover:bg-[#333333]"
+                  className="block px-4 py-2 text-sm font-medium font-manrope text-white hover:bg-[#333333]"
                 >
                   Option 1
                 </a>
                 <a
                   href="#"
-                  className="block px-4 py-2 text-sm text-white hover:bg-[#333333]"
+                  className="block px-4 py-2 text-sm font-medium font-manrope text-white hover:bg-[#333333]"
                 >
                   Option 2
                 </a>
                 <a
                   href="#"
-                  className="block px-4 py-2 text-sm text-white hover:bg-[#333333]"
+                  className="block px-4 py-2 text-sm font-medium font-manrope text-white hover:bg-[#333333]"
                 >
                   Option 3
                 </a>
