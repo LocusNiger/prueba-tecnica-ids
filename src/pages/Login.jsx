@@ -156,11 +156,11 @@ const Login = () => {
             <div className="flex-1 h-px bg-[#323232]"></div>
           </div>
 
-          {/* Social Login Options */}
+          {/* Social */}
           <div className="grid grid-cols-3 gap-4">
             <button
               type="button"
-              className="flex items-center justify-center space-x-2 py-3 px-4 border border-[#323232] rounded-xl hover:bg-[#323232] transition-colors"
+              className="cursor-pointer flex items-center justify-center space-x-2 py-3 px-4 border border-[#323232] rounded-xl hover:bg-[#323232] transition-colors"
             >
               <FaGoogle className="text-white text-xl" />
               <span className="text-sm font-bold font-manrope text-[#FFFFFF]">
@@ -169,7 +169,7 @@ const Login = () => {
             </button>
             <button
               type="button"
-              className="flex items-center justify-center space-x-2 py-3 px-4 border border-[#323232] rounded-xl hover:bg-[#323232] transition-colors"
+              className="cursor-pointer flex items-center justify-center space-x-2 py-3 px-4 border border-[#323232] rounded-xl hover:bg-[#323232] transition-colors"
             >
               <FaFacebookF className="text-[#1877F2] text-xl" />
               <span className="text-sm font-bold font-manrope text-[#FFFFFF]">
@@ -178,7 +178,7 @@ const Login = () => {
             </button>
             <button
               type="button"
-              className="flex items-center justify-center space-x-2 py-3 px-4 border border-[#323232] rounded-xl hover:bg-[#323232] transition-colors"
+              className="cursor-pointer flex items-center justify-center space-x-2 py-3 px-4 border border-[#323232] rounded-xl hover:bg-[#323232] transition-colors"
             >
               <FaApple className="text-white text-xl" />
               <span className="text-sm font-bold font-manrope text-[#FFFFFF]">
@@ -187,7 +187,7 @@ const Login = () => {
             </button>
           </div>
 
-          {/* Sign Up Link */}
+          {/* Sign Up */}
           <div className="text-center text-[#FFFFFF87] font-azeret-mono text-sm font-normal">
             Don't have an account?{" "}
             <a
