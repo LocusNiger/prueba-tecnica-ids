@@ -1,5 +1,6 @@
 import { GoArrowUpRight } from "react-icons/go";
 import Carrusel from "../components/Carrusel";
+import TopSellerCarrusel from "../components/TopSellerCarrusel";
 
 const Home = () => {
   return (
@@ -36,9 +37,9 @@ const Home = () => {
             </button>
           </div>
         </div>
-        {/* Carrusel */}
       </div>
       <Carrusel />
+      <TopSellerCarrusel />
     </div>
   );
 };
