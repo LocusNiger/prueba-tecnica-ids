@@ -13,9 +13,9 @@ const TopSellerCarrusel = () => {
   return (
     <div className="w-full flex mt-10 py-2 items-center justify-center">
       <div className="border border-[#FFFFFF1A] bg-[#FFFFFF1A] p-2.5 rounded-full">
-        <FaChevronLeft className="text-[#FFFFFF]" />
+        <FaChevronLeft className="text-[#FFFFFF] cursor-pointer" />
       </div>
-      <div className="border border-yellow-400 flex flex-col items-start w-[1110px] gap-6 max-w-7xl">
+      <div className="flex flex-col items-start w-[1110px] gap-[30px] max-w-7xl">
         {/* Textos */}
         <div className="flex gap-2 items-center">
           <h3 className="text-3xl text-[#FFFFFF] font-manrope font-semibold">
@@ -34,7 +34,7 @@ const TopSellerCarrusel = () => {
         </div>
       </div>
       <div className="border border-[#DDF247] bg-[#DDF247] p-2.5 rounded-full">
-        <FaChevronRight className="text-[#161616]" />
+        <FaChevronRight className="text-[#161616] cursor-pointer" />
       </div>
     </div>
   );
