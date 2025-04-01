@@ -1,6 +1,7 @@
 import { GoArrowUpRight } from "react-icons/go";
 import Carrusel from "../components/Carrusel";
 import TopSellerCarrusel from "../components/TopSellerCarrusel";
+import Discovery from "../components/Discovery";
 
 const Home = () => {
   return (
@@ -40,6 +41,7 @@ const Home = () => {
       </div>
       <Carrusel />
       <TopSellerCarrusel />
+      <Discovery />
     </div>
   );
 };

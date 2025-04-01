@@ -11,7 +11,7 @@ const TopSellerCarrusel = () => {
   ];
   return (
     <div className="w-full flex flex-col mt-10 py-2 gap-10 items-center justify-center border border-red-500">
-      <div className="border border-yellow-400 flex flex-col items-start w-[1000px] gap-6 max-w-7xl">
+      <div className="border border-yellow-400 flex flex-col items-start w-[1100px] gap-6 max-w-7xl">
         {/* Textos */}
         <div className="flex gap-2">
           <h3 className="text-3xl text-[#FFFFFF] font-manrope font-semibold">
