@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaChevronDown, FaWallet } from "react-icons/fa";
 import { CgMenuRight } from "react-icons/cg";
+import { Link } from "react-router";
 
 const Header = () => {
   const navItems = [
@@ -60,12 +61,12 @@ const Header = () => {
               </button>
               {item.hasDropdown && activeDropdown === item.name && (
                 <div className="absolute mt-2 py-2 w-48 bg-[#222222] rounded-md shadow-lg z-10">
-                  <a
-                    href="#"
+                  <Link
+                    to="/home"
                     className="block px-4 py-2 text-sm font-medium font-manrope text-white hover:bg-[#333333]"
                   >
-                    Option 1
-                  </a>
+                    HOME
+                  </Link>
                   <a
                     href="#"
                     className="block px-4 py-2 text-sm font-medium font-manrope text-white hover:bg-[#333333]"
