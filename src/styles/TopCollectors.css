@@ -1,0 +1,34 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.badge-row {
+  display: flex;
+  width: fit-content;
+}
+
+/* Add a large background text effect as seen in the image */
+.w-full.bg-black {
+  position: relative;
+  overflow: hidden;
+}
+
+.w-full.bg-black::before {
+  content: "Top Collector";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 180px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.03);
+  text-align: center;
+  z-index: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}

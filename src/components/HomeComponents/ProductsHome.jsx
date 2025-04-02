@@ -2,8 +2,8 @@ import DiscoveryProdutCard from "./DiscoveryProdutCard";
 
 const ProductsHome = () => {
   return (
-    <div className="w-full border border-blue-500">
-      <div className="w-full h-[410px] border border-b-emerald-700 flex gap-[30px]">
+    <div className="w-full">
+      <div className="w-full h-[410px] flex gap-[30px]">
         {/* PRODUCTO */}
         <DiscoveryProdutCard />
         <DiscoveryProdutCard />
