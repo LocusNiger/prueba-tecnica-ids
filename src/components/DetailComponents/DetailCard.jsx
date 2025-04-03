@@ -1,7 +1,7 @@
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { TbCircles } from "react-icons/tb";
-import { FaRegHeart } from "react-icons/fa6";
+import { FaEthereum, FaRegHeart } from "react-icons/fa6";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { PiDotsThreeOutline } from "react-icons/pi";
 import { FiClock } from "react-icons/fi";
@@ -158,9 +158,257 @@ const DetailCard = () => {
         </div>
       </div>
       {/* Details */}
-      <div className="border border-amber-700 w-full h-[264px] rounded-[20px] p-5 flex gap-[16px]"></div>
+      <div className="w-full h-[264px] rounded-[20px] p-5 flex flex-col bg-[#232323] gap-[16px]">
+        <div className="h-[19px] flex justify-between items-center">
+          {/* Details section */}
+          <div className="flex items-center gap-2">
+            <HiMiniPresentationChartBar className="text-white" size={15} />
+            <span className="text-white text-sm font-manrope font-semibold">
+              Details
+            </span>
+          </div>
+          <FaChevronDown className="text-[#646464]" size={12} />
+        </div>
+        {/* Divider */}
+        <div className="h-[1px] bg-[#343434] w-full" />
+        {/* Details content */}
+        <div className="flex flex-col gap-2 w-full h-[172px]">
+          <div className="flex w-full justify-between">
+            <p className="font-azeret-mono text-white text-sm">
+              Contact Address
+            </p>
+            <p className="font-azeret-mono text-[#DDF247] text-sm">
+              0x1984...c38f
+            </p>
+          </div>
+          <div className="flex w-full justify-between">
+            <div className="flex w-full justify-between">
+              <p className="font-azeret-mono text-white text-sm">Token ID</p>
+              <p className="font-azeret-mono text-[#DDF247] text-sm">0270</p>
+            </div>
+          </div>
+          <div className="flex w-full justify-between">
+            <div className="flex w-full justify-between">
+              <p className="font-azeret-mono text-white text-sm">
+                Token Standard
+              </p>
+              <p className="font-azeret-mono text-[#FFFFFF] text-sm">ERC-721</p>
+            </div>
+          </div>
+          <div className="flex w-full justify-between">
+            <div className="flex w-full justify-between">
+              <p className="font-azeret-mono text-white text-sm">Chain</p>
+              <p className="font-azeret-mono text-[#FFFFFF] text-sm">
+                Ethereum
+              </p>
+            </div>
+          </div>
+          <div className="flex w-full justify-between">
+            <div className="flex w-full justify-between">
+              <p className="font-azeret-mono text-white text-sm">
+                Last Updated
+              </p>
+              <p className="font-azeret-mono text-[#FFFFFF] text-sm">
+                8 months ago
+              </p>
+            </div>
+          </div>
+          <div className="flex w-full justify-between">
+            <div className="flex w-full justify-between">
+              <p className="font-azeret-mono text-white text-sm">
+                Creator Earnings
+              </p>
+              <p className="font-azeret-mono text-[#FFFFFF] text-sm">8%</p>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Offer */}
-      <div className="border border-yellow-500 w-full h-[319px] rounded-[20px] p-5 flex gap-[16px]"></div>
+      <div className="w-full h-[319px] rounded-[20px] p-5 flex flex-col bg-[#232323] gap-[16px]">
+        <div className="h-[19px] flex justify-between items-center">
+          {/* Offers section */}
+          <div className="flex items-center gap-2">
+            <HiMiniPresentationChartBar className="text-white" size={15} />
+            <span className="text-white text-sm font-manrope font-semibold">
+              Offers
+            </span>
+          </div>
+          <FaChevronDown className="text-[#646464]" size={12} />
+        </div>
+        {/* Divider */}
+        <div className="h-[1px] bg-[#343434] w-full" />
+        {/* Offers content */}
+        <div className="flex flex-col gap-4 w-full h-[227px]">
+          {/* table header */}
+          <div className="flex w-full justify-between">
+            <div className="w-[168px] flex items-start">
+              <span className="font-manrope text-white text-sm font-semibold">
+                Price
+              </span>
+            </div>
+            <div className="w-[168px] flex items-start">
+              <span className="font-manrope text-white text-sm font-semibold">
+                USD Price
+              </span>
+            </div>
+            <div className="w-[168px] flex items-start font-manrope text-white text-sm">
+              <span className="font-manrope text-white text-sm font-semibold">
+                Quantity
+              </span>
+            </div>
+            <div className="w-[168px] flex items-start font-manrope text-white text-sm">
+              <span className="font-manrope font-semibold text-white text-sm">
+                Floor Diference
+              </span>
+            </div>
+            <div className="w-[168px] flex items-start font-manrope text-white text-sm">
+              <span className="font-manrope font-semibold text-white text-sm">
+                Expiration
+              </span>
+            </div>
+            <div className="w-[168px] flex items-start font-manrope text-white text-sm">
+              <span className="font-semibold font-manrope text-white text-sm">
+                Form
+              </span>
+            </div>
+          </div>
+          {/* divider */}
+          <div className="h-[1px] bg-[#343434] w-full" />
+          {/* table content */}
+          <div className="w-full h-[175px] gap-3.5 flex flex-col">
+            <div className="flex w-full justify-between">
+              <div className="w-[168px] flex items-start">
+                <FaEthereum className="text-white mr-1.5" />
+                <span className="font-azeret-mono text-white text-sm">
+                  0,0034
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  $6,60
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">3</span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  90% below
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  In 26 day
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-[#DDF247] text-sm">
+                  273E40
+                </span>
+              </div>
+            </div>
+            {/* divider */}
+            <div className="h-[1px] bg-[#343434] w-full" />
+            <div className="flex w-full justify-between">
+              <div className="w-[168px] flex items-start">
+                <FaEthereum className="text-white mr-1.5" />
+                <span className="font-azeret-mono text-white text-sm">
+                  0,0034
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  $6,13
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">1</span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  90% below
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  In 10 day
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-[#DDF247] text-sm">
+                  273E40
+                </span>
+              </div>
+            </div>
+            {/* divider */}
+            <div className="h-[1px] bg-[#343434] w-full" />
+            <div className="flex w-full justify-between">
+              <div className="w-[168px] flex items-start">
+                <FaEthereum className="text-white mr-1.5" />
+                <span className="font-azeret-mono text-white text-sm">
+                  0,0033
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  $6,11
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">3</span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  91% below
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  In 23 day
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-[#DDF247] text-sm">
+                  273E40
+                </span>
+              </div>
+            </div>
+            {/* divider */}
+            <div className="h-[1px] bg-[#343434] w-full" />
+            <div className="flex w-full justify-between">
+              <div className="w-[168px] flex items-start">
+                <FaEthereum className="text-white mr-1.5" />
+                <span className="font-azeret-mono text-white text-sm">
+                  0,0033
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  $6,11
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">1</span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  91% below
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-white text-sm">
+                  In 20 day
+                </span>
+              </div>
+              <div className="w-[168px] flex items-start">
+                <span className="font-azeret-mono text-[#DDF247] text-sm">
+                  273E40
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
