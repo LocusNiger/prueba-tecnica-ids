@@ -172,7 +172,7 @@ const DetailCard = () => {
         {/* Divider */}
         <div className="h-[1px] bg-[#343434] w-full" />
         {/* Details content */}
-        <div className="flex flex-col gap-2 w-full h-[172px]">
+        <div className="flex flex-col justify-between gap-2 w-full h-[172px]">
           <div className="flex w-full justify-between">
             <p className="font-azeret-mono text-white text-sm">
               Contact Address
