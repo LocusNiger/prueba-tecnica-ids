@@ -11,9 +11,11 @@ import { FaChevronDown } from "react-icons/fa";
 import ChartComponent from "./ChartComponent";
 import SocialHoverCard from "./SocialHoverCard";
 import React, { useState } from "react";
+import DotsHoverCard from "./DotsHoverCard";
 
 const DetailCard = () => {
   const [showSocialHoverCard, setShowSocialHoverCard] = useState(false);
+  const [showDotsHoverCard, setShowDotsHoverCard] = useState(false);
 
   return (
     <div className="w-[1110px] max-w-7xl h-[1526px] flex flex-col gap-[20px]">
@@ -51,8 +53,21 @@ const DetailCard = () => {
                       </div>
                     )}
                   </div>
-                  <div>
-                    <PiDotsThreeOutline className="text-lg text-[#919191] cursor-pointer" />
+                  <div className="relative">
+                    <PiDotsThreeOutline
+                      className="text-lg text-[#919191] cursor-pointer"
+                      onMouseEnter={() => setShowDotsHoverCard(true)}
+                      onMouseLeave={() => setShowDotsHoverCard(false)}
+                    />
+                    {showDotsHoverCard && (
+                      <div
+                        className={`absolute top-full left-[-200px] mt-2 fade-in transition ${
+                          showDotsHoverCard ? "show" : ""
+                        }`}
+                      >
+                        <DotsHoverCard />
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
