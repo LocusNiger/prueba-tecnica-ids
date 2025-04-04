@@ -9,8 +9,12 @@ import { GoArrowUpRight } from "react-icons/go";
 import { HiMiniPresentationChartBar } from "react-icons/hi2";
 import { FaChevronDown } from "react-icons/fa";
 import ChartComponent from "./ChartComponent";
+import SocialHoverCard from "./SocialHoverCard";
+import React, { useState } from "react";
 
 const DetailCard = () => {
+  const [showSocialHoverCard, setShowSocialHoverCard] = useState(false);
+
   return (
     <div className="w-[1110px] max-w-7xl h-[1526px] flex flex-col gap-[20px]">
       {/* Contenedor product */}
@@ -31,8 +35,25 @@ const DetailCard = () => {
                   <RiVerifiedBadgeFill className="text-lg text-[#DDF247]" />
                 </div>
                 <div className="flex gap-2.5">
-                  <IoShareSocialOutline className="text-lg text-[#919191]" />
-                  <PiDotsThreeOutline className="text-lg text-[#919191]" />
+                  <div className="relative">
+                    <IoShareSocialOutline
+                      className="text-lg text-[#919191] cursor-pointer"
+                      onMouseEnter={() => setShowSocialHoverCard(true)}
+                      onMouseLeave={() => setShowSocialHoverCard(false)}
+                    />
+                    {showSocialHoverCard && (
+                      <div
+                        className={`absolute top-full left-[-200px] mt-2 fade-in transition ${
+                          showSocialHoverCard ? "show" : ""
+                        }`}
+                      >
+                        <SocialHoverCard />
+                      </div>
+                    )}
+                  </div>
+                  <div>
+                    <PiDotsThreeOutline className="text-lg text-[#919191] cursor-pointer" />
+                  </div>
                 </div>
               </div>
               <div className="w-full h-[44px]">
