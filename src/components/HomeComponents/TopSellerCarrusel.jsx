@@ -3,12 +3,36 @@ import SellerCard from "./SellerCard";
 
 const TopSellerCarrusel = () => {
   const sellers = [
-    { name: "Courtney Henry", index: 1 },
-    { name: "Robertson", index: 2 },
-    { name: "Midjourney NFTs", index: 3 },
-    { name: "Kristin Watson", index: 4 },
-    { name: "Dianne Russell", index: 5 },
-    { name: "Jenny Wilson", index: 6 },
+    {
+      name: "Courtney Henry",
+      index: 1,
+      imgSource: "https://picsum.photos/seed/user1/100",
+    },
+    {
+      name: "Robertson",
+      index: 2,
+      imgSource: "https://picsum.photos/seed/user2/100",
+    },
+    {
+      name: "Midjourney NFTs",
+      index: 3,
+      imgSource: "https://picsum.photos/seed/user3/100",
+    },
+    {
+      name: "Kristin Watson",
+      index: 4,
+      imgSource: "https://picsum.photos/seed/user4/100",
+    },
+    {
+      name: "Dianne Russell",
+      index: 5,
+      imgSource: "https://picsum.photos/seed/user5/100",
+    },
+    {
+      name: "Jenny Wilson",
+      index: 6,
+      imgSource: "https://picsum.photos/seed/user6/100",
+    },
   ];
   return (
     <div className="w-full flex mt-10 py-2 items-center justify-center bg-[#161616]">

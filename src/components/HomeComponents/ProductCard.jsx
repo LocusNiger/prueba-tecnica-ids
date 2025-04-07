@@ -11,9 +11,15 @@ const ProductCard = () => {
 
   return (
     <div className="mx-auto w-[350px] h-[430px] rounded-4xl bg-[#1E1E1E] shadow-xl">
-      <div className="">
+      <div className="pt-0.5">
         {/* Imagen */}
         <div className="relative bg-[#2E2E2E] mx-3 mt-3 mb-2 rounded-4xl w-[326px] h-[338px]">
+          <img
+            className="rounded-4xl w-full h-full object-cover"
+            alt="NFT"
+            src="https://picsum.photos/326/338"
+          />
+
           {/* Badges arriba */}
           <div className="absolute top-3 right-3 flex space-x-2">
             <div className="bg-[#444444] flex items-center justify-center text-[#FFFFFF] font-manrope px-3.5 rounded-full text-[12px] font-semibold">

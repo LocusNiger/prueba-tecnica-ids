@@ -5,6 +5,11 @@ const SellerCard = ({ seller }) => {
     <div className="flex flex-col w-[160px] h-[171px] gap-[14px]">
       {/* Contenedor imagen */}
       <div className="relative w-[106px] h-[106px] bg-[#2E2E2E] rounded-full self-center">
+        <img
+          src={seller.imgSource}
+          alt="Imagen de vendedor"
+          className="w-full h-full rounded-full object-cover"
+        />
         {/* Index */}
         <div
           className={`absolute left-[70px] top-0 w-[24px] h-[24px] rounded-full flex items-center justify-center ${

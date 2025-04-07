@@ -2,23 +2,83 @@ import { useEffect, useRef } from "react";
 import "../../styles/TopCollectors.css";
 
 const collectors = [
-  { id: 1, name: "EHT senders" },
-  { id: 2, name: "Psyop gang" },
-  { id: 3, name: "Sproto gremlins" },
-  { id: 4, name: "Beanz office" },
-  { id: 5, name: "Nakamigos" },
-  { id: 6, name: "The lobstars" },
-  { id: 7, name: "Girls riding things" },
-  { id: 8, name: "Muri" },
-  { id: 9, name: "Cyberkongz" },
-  { id: 10, name: "Topia worlds" },
-  { id: 11, name: "Mirandus" },
-  { id: 12, name: "Cross the ages" },
-  { id: 13, name: "Cel" },
-  { id: 14, name: "Alpha gardeners pass" },
-  { id: 15, name: "Neo tokyo" },
-  { id: 16, name: "Genesis oath" },
-  { id: 17, name: "San gri" },
+  {
+    id: 1,
+    name: "EHT senders",
+    imgSource: "https://picsum.photos/seed/user1/100",
+  },
+  {
+    id: 2,
+    name: "Psyop gang",
+    imgSource: "https://picsum.photos/seed/user2/100",
+  },
+  {
+    id: 3,
+    name: "Sproto gremlins",
+    imgSource: "https://picsum.photos/seed/user3/100",
+  },
+  {
+    id: 4,
+    name: "Beanz office",
+    imgSource: "https://picsum.photos/seed/user4/100",
+  },
+  {
+    id: 5,
+    name: "Nakamigos",
+    imgSource: "https://picsum.photos/seed/user5/100",
+  },
+  {
+    id: 6,
+    name: "The lobstars",
+    imgSource: "https://picsum.photos/seed/user6/100",
+  },
+  {
+    id: 7,
+    name: "Girls riding things",
+    imgSource: "https://picsum.photos/seed/user7/100",
+  },
+  { id: 8, name: "Muri", imgSource: "https://picsum.photos/seed/user8/100" },
+  {
+    id: 9,
+    name: "Cyberkongz",
+    imgSource: "https://picsum.photos/seed/user9/100",
+  },
+  {
+    id: 10,
+    name: "Topia worlds",
+    imgSource: "https://picsum.photos/seed/user10/100",
+  },
+  {
+    id: 11,
+    name: "Mirandus",
+    imgSource: "https://picsum.photos/seed/user11/100",
+  },
+  {
+    id: 12,
+    name: "Cross the ages",
+    imgSource: "https://picsum.photos/seed/user12/100",
+  },
+  { id: 13, name: "Cel", imgSource: "https://picsum.photos/seed/user13/100" },
+  {
+    id: 14,
+    name: "Alpha gardeners pass",
+    imgSource: "https://picsum.photos/seed/user14/100",
+  },
+  {
+    id: 15,
+    name: "Neo tokyo",
+    imgSource: "https://picsum.photos/seed/user15/100",
+  },
+  {
+    id: 16,
+    name: "Genesis oath",
+    imgSource: "https://picsum.photos/seed/user16/100",
+  },
+  {
+    id: 17,
+    name: "San gri",
+    imgSource: "https://picsum.photos/seed/user17/100",
+  },
 ];
 
 const TopCollectors = () => {
@@ -74,7 +134,13 @@ const TopCollectors = () => {
                 key={collector.id}
                 className="badge flex items-center bg-[#333333] rounded-full pl-2.5 pr-5 h-[70px] min-w-fit"
               >
-                <div className="rounded-full bg-[#555555] mr-3 w-[50px] h-[50px]"></div>
+                <div className="rounded-full bg-[#555555] mr-3 w-[50px] h-[50px]">
+                  <img
+                    src={collector.imgSource}
+                    alt={collector.name}
+                    className="rounded-full w-full h-full object-cover"
+                  />
+                </div>
                 <span className="text-white text-lg font-semibold">
                   {collector.name}
                 </span>
@@ -93,7 +159,13 @@ const TopCollectors = () => {
                 key={collector.id}
                 className="badge flex items-center bg-[#333333] rounded-full pl-2.5 pr-5 h-[70px] min-w-fit"
               >
-                <div className="rounded-full bg-[#555555] mr-3 w-[50px] h-[50px]"></div>
+                <div className="rounded-full bg-[#555555] mr-3 w-[50px] h-[50px]">
+                  <img
+                    src={collector.imgSource}
+                    alt={collector.name}
+                    className="rounded-full w-full h-full object-cover"
+                  />
+                </div>
                 <span className="text-white text-lg font-semibold">
                   {collector.name}
                 </span>

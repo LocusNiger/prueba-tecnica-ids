@@ -5,6 +5,11 @@ const DiscoveryProdutCard = () => {
     <div className="w-[255px] h-[408px] rounded-[20px] bg-[#1a1a1a] flex flex-col gap-[12px] overflow-hidden shadow-lg p-[10px]">
       {/* Image Container */}
       <div className="w-[235px] h-[244px] bg-[#2E2E2E] rounded-[20px] relative">
+        <img
+          src="https://picsum.photos/235/244"
+          alt="Product"
+          className="w-full h-full object-cover rounded-[20px]"
+        />
         {/* Heart Icon Button */}
         <button className="absolute top-3 right-3 bg-[#444444] w-[26px] h-[26px] rounded-full flex items-center justify-center">
           <FaHeart className="text-white text-sm" />
