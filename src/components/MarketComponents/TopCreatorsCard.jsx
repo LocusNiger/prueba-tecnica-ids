@@ -1,6 +1,18 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
-const TopCreatorsCard = ({ index, name, user, isFollowing }) => {
+const TopCreatorsCard = ({
+  index,
+  name,
+  user,
+  isFollowing: initialFollowing,
+}) => {
+  const [isFollowing, setIsFollowing] = useState(initialFollowing);
+
+  const handleFollowClick = () => {
+    setIsFollowing(!isFollowing);
+  };
+
   return (
     <div className="flex flex-col items-center justify-between gap-5">
       <div className="h-[60px] w-full flex justify-between items-center gap-2.5">
@@ -22,13 +34,15 @@ const TopCreatorsCard = ({ index, name, user, isFollowing }) => {
             </p>
           </div>
         </div>
-        <button
+        <motion.button
           className={`${
             isFollowing ? "bg-[#DDF247]" : "bg-[#DEE8E8]"
           } w-[100px] h-[44px] rounded-[12px] p-2.5 text-sm font-manrope font-semibold cursor-pointer`}
+          onClick={handleFollowClick}
+          transition={{ duration: 0.3 }}
         >
           {isFollowing ? "Following" : "Follow"}
-        </button>
+        </motion.button>
       </div>
     </div>
   );
