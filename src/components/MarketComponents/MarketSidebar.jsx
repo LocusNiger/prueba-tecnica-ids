@@ -8,6 +8,7 @@ import { RiWallet3Line, RiHistoryLine } from "react-icons/ri";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsCollection } from "react-icons/bs";
 import { HiMenuAlt2 } from "react-icons/hi";
+import { Link } from "react-router";
 
 const MarketSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -134,27 +135,29 @@ const MarketSidebar = () => {
             whileHover={{ scale: 1.05 }}
             style={{ height: "57px" }}
           >
-            <div className="flex items-center justify-center">
-              <motion.div
-                className="bg-[#c1ff00] h-10 w-10 flex items-center justify-center rounded-md"
-                whileHover={{ rotate: 10 }}
-              >
-                <span className="text-black font-bold text-xl">9</span>
-              </motion.div>
-              <AnimatePresence>
-                {isOpen && (
-                  <motion.span
-                    className="text-white text-xl font-bold ml-2"
-                    variants={itemVariants}
-                    initial="closed"
-                    animate="open"
-                    exit="closed"
-                  >
-                    OpeN9
-                  </motion.span>
-                )}
-              </AnimatePresence>
-            </div>
+            <Link to="/home">
+              <div className="flex items-center justify-center">
+                <motion.div
+                  className="bg-[#c1ff00] h-10 w-10 flex items-center justify-center rounded-md"
+                  whileHover={{ rotate: 10 }}
+                >
+                  <span className="text-black font-bold text-xl">9</span>
+                </motion.div>
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.span
+                      className="text-white text-xl font-bold ml-2"
+                      variants={itemVariants}
+                      initial="closed"
+                      animate="open"
+                      exit="closed"
+                    >
+                      OpeN9
+                    </motion.span>
+                  )}
+                </AnimatePresence>
+              </div>
+            </Link>
           </motion.div>
         </div>
 
