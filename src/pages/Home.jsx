@@ -7,7 +7,7 @@ import StepByStep from "../components/HomeComponents/StepByStep";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#161616] gap-10 py-16">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#161616] gap-10 py-44">
       {/* 1er screen */}
       <div className="flex flex-col gap-12">
         {/* Título + subtítulo */}

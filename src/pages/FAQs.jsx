@@ -56,7 +56,7 @@ const FAQs = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center bg-[#161616] gap-10 py-16 ">
+    <div className="flex flex-col items-center justify-center bg-[#161616] gap-10 py-44 ">
       {/* Título + subtítulo */}
       <div className="text-center w-full flex flex-col gap-4">
         <h1 className="font-manrope text-white text-[40px] font-semibold">
