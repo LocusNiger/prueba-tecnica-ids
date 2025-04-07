@@ -11,7 +11,7 @@ const TopSellerCarrusel = () => {
     { name: "Jenny Wilson", index: 6 },
   ];
   return (
-    <div className="w-full flex mt-10 py-2 items-center justify-center">
+    <div className="w-full flex mt-10 py-2 items-center justify-center bg-[#161616]">
       <div className="border border-[#FFFFFF1A] bg-[#FFFFFF1A] p-2.5 rounded-full">
         <FaChevronLeft className="text-[#FFFFFF] cursor-pointer" />
       </div>

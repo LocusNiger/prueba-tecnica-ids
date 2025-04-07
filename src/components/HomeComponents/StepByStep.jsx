@@ -33,7 +33,7 @@ const StepByStep = () => {
   ];
 
   return (
-    <div className=" w-[1110px] h-[346px] flex flex-col mt-6 py-2 gap-[30px] items-center justify-center">
+    <div className="bg-[#161616] w-[1110px] h-[346px] flex flex-col mt-6 py-2 gap-[30px] items-center justify-center">
       {/* Title */}
       <div className="w-full h-[44px]">
         <h3 className="text-[32px] text-[#FFFFFF] text-center font-manrope font-semibold">
@@ -41,7 +41,7 @@ const StepByStep = () => {
         </h3>
       </div>
       {/* Cards */}
-      <div className="w-full h-[272px] flex gap-[30px] border border-red-500">
+      <div className="w-full h-[272px] flex gap-[30px] ">
         <img
           src="/FlechaVector.svg"
           alt="Flecha"

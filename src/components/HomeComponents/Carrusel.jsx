@@ -5,7 +5,7 @@ import BackgroundCard from "./BackgroundCard";
 const Carrusel = () => {
   return (
     /* Contenedor carrusel */
-    <div className="w-full flex flex-col mt-10 py-2 gap-10">
+    <div className="w-full flex flex-col mt-10 py-2 gap-10 bg-[#161616]">
       {/* Contenedor de tarjetas con perspectiva */}
       <div
         className="relative flex items-center justify-center w-full h-[500px]"

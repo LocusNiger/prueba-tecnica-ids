@@ -4,7 +4,7 @@ import ProductsHome from "./ProductsHome";
 
 const Discovery = () => {
   return (
-    <div className="w-[1110px] flex flex-col mt-6 py-2 gap-8 items-center justify-center">
+    <div className="w-[1110px] flex flex-col mt-6 py-2 gap-8 items-center justify-center bg-[#161616] max-w-7xl">
       {/* Textos */}
       <div className="flex items-center justify-between md:w-[1110px] gap-6 max-w-7xl">
         <h3 className="text-3xl text-[#FFFFFF] font-manrope font-semibold">
