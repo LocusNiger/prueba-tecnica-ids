@@ -1,6 +1,7 @@
 import CallToAction from "../components/MarketComponents/CallToAction";
 import MarketSearchbar from "../components/MarketComponents/MarketSearchbar";
 import MarketSidebar from "../components/MarketComponents/MarketSidebar";
+import TopCreators from "../components/MarketComponents/TopCreators";
 import TrendingNFTs from "../components/MarketComponents/TrendingNFTs";
 
 const Market = () => {
@@ -23,6 +24,7 @@ const Market = () => {
           <MarketSearchbar />
           <CallToAction />
           <TrendingNFTs />
+          <TopCreators />
         </div>
       </div>
     </div>

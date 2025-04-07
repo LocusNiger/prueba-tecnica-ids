@@ -3,7 +3,7 @@ import BadgesFilter from "./BadgesFilter";
 
 const TrendingNFTs = () => {
   return (
-    <div className="w-full flex flex-col gap-[30px]">
+    <div className="w-full flex flex-col gap-[30px] max-w-[1100px]">
       <h2 className="font-manrope text-white text-[32px] font-semibold">
         Trending NFTs
       </h2>
