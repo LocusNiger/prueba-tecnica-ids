@@ -71,25 +71,6 @@ const Header = () => {
     >
       <div className="container max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-8">
-          {/* Animated Logo in hexagon */}
-          <motion.div
-            className="bg-[#e4ff40] h-12 w-12 flex items-center justify-center rounded-lg relative overflow-hidden"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-          >
-            <motion.span
-              className="text-black text-2xl font-bold"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              9
-            </motion.span>
-            {/* Hexagon shape using pseudo-elements */}
-            <div className="absolute inset-0 bg-[#e4ff40] rotate-45 -z-10"></div>
-          </motion.div>
-
           {/* Secondary logo */}
           <motion.div
             className="text-[#e4ff40] text-2xl font-bold"
@@ -97,7 +78,7 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
           >
-            9
+            <img src="/Logo2.png" alt="Logo" className="h-[57px] w-[168px]" />
           </motion.div>
         </div>
 

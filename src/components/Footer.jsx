@@ -13,15 +13,8 @@ const Footer = () => {
         {/* Main footer */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Logo (descargar como png) */}
-          <div className="md:col-span-1 flex items-center">
-            <div className="flex items-center">
-              <div className="bg-yellow-400 h-10 w-10 flex items-center justify-center rounded-md">
-                <span className="text-black font-bold text-xl">9</span>
-              </div>
-              <span className="ml-2 text-white text-2xl font-semibold">
-                OpeN9
-              </span>
-            </div>
+          <div className="md:col-span-1 flex items-start">
+            <img src="/Logo2.png" alt="Logo" className="h-[57px] w-[168px]" />
           </div>
 
           {/* Columnas */}
