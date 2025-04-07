@@ -19,11 +19,13 @@ const Market = () => {
       `}
     >
       <MarketSidebar />
-      <div className="flex-1 flex py-10 px-4 xl:px-[50px] gap-10 min-w-[800px]">
-        <div className="w-full flex flex-col gap-10">
+      <div className="flex-1 py-10 px-4 xl:px-[50px] gap-10 min-w-[800px] flex flex-col 3xl:grid 3xl:grid-cols-3 3xl:grid-rows-2 3xl:gap-4">
+        <div className="w-full flex flex-col gap-10 3xl:col-span-2 3xl:row-span-2">
           <MarketSearchbar />
           <CallToAction />
           <TrendingNFTs />
+        </div>
+        <div className="3xl:row-span-2 3xl:col-start-3">
           <TopCreators />
         </div>
       </div>

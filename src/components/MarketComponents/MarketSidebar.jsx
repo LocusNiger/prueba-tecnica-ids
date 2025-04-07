@@ -136,26 +136,18 @@ const MarketSidebar = () => {
             style={{ height: "57px" }}
           >
             <Link to="/home">
-              <div className="flex items-center justify-center">
-                <motion.div
-                  className="bg-[#c1ff00] h-10 w-10 flex items-center justify-center rounded-md"
-                  whileHover={{ rotate: 10 }}
-                >
-                  <span className="text-black font-bold text-xl">9</span>
-                </motion.div>
-                <AnimatePresence>
-                  {isOpen && (
-                    <motion.span
-                      className="text-white text-xl font-bold ml-2"
-                      variants={itemVariants}
-                      initial="closed"
-                      animate="open"
-                      exit="closed"
-                    >
-                      OpeN9
-                    </motion.span>
-                  )}
-                </AnimatePresence>
+              <div
+                className={`${
+                  isOpen
+                    ? "w-[220px] flex items-center justify-center"
+                    : "flex items-center justify-center"
+                }`}
+              >
+                {isOpen ? (
+                  <img src="/Logo2.png" alt="Logo" className="w-[60%]" />
+                ) : (
+                  <img src="/LogoSinTexto.png" alt="Logo" className="w-[50%]" />
+                )}
               </div>
             </Link>
           </motion.div>

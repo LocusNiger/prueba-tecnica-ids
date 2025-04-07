@@ -1,5 +1,6 @@
 import TrendingNFTCard from "./TrendingNFTCard";
 import BadgesFilter from "./BadgesFilter";
+import PaginationIndicator from "../DetailComponents/PaginationIndicator";
 
 const TrendingNFTs = () => {
   return (
@@ -15,6 +16,7 @@ const TrendingNFTs = () => {
         <TrendingNFTCard />
         <TrendingNFTCard />
       </div>
+      <PaginationIndicator />
     </div>
   );
 };

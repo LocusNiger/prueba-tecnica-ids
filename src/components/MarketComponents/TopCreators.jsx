@@ -2,7 +2,7 @@ import TopCreatorsCard from "./TopCreatorsCard";
 
 const TopCreators = () => {
   return (
-    <div className="w-[400px]  rounded-[20px] flex flex-col gap-[30px] p-5 bg-[#232323]">
+    <div className="w-[400px] rounded-[20px] flex flex-col gap-[30px] p-5 bg-[#232323]">
       {/* TITLE */}
       <div className="h-[30px] flex justify-between items-center">
         <p className="text-white text-[22px] font-manrope font-semibold">
@@ -18,30 +18,35 @@ const TopCreators = () => {
         name={"Brooklyn Simmons"}
         user={"themes"}
         isFollowing={false}
+        imageUrl="https://picsum.photos/40"
       />
       <TopCreatorsCard
         index={2}
         name={"Marvin McKinney"}
         user={"themes"}
         isFollowing={true}
+        imageUrl="https://picsum.photos/40"
       />
       <TopCreatorsCard
         index={3}
         name={"Williamson"}
         user={"Williamson"}
         isFollowing={false}
+        imageUrl="https://picsum.photos/40"
       />
       <TopCreatorsCard
         index={4}
         name={"Leslie Alexander"}
         user={"themes"}
         isFollowing={false}
+        imageUrl="https://picsum.photos/40"
       />
       <TopCreatorsCard
         index={5}
         name={"Floyd Miles"}
         user={"Floyd Miles"}
         isFollowing={false}
+        imageUrl="https://picsum.photos/40"
       />
     </div>
   );

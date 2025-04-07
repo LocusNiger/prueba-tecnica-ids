@@ -6,6 +6,7 @@ const TopCreatorsCard = ({
   name,
   user,
   isFollowing: initialFollowing,
+  imageUrl,
 }) => {
   const [isFollowing, setIsFollowing] = useState(initialFollowing);
 
@@ -24,7 +25,13 @@ const TopCreatorsCard = ({
             className="w-[60px] h-[60px] rounded-full bg-[#2E2E2E] mr-2 overflow-hidden"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          />
+          >
+            <img
+              src={imageUrl}
+              alt={`${name}'s avatar`}
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
           <div>
             <p className="text-[16px] font-manrope font-semibold text-[#FFFFFF]">
               {name}

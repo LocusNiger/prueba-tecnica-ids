@@ -17,14 +17,20 @@ const TrendingNFTCard = () => {
             className="w-10 h-10 rounded-full bg-[#333333] mr-2 overflow-hidden"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          />
+          >
+            <img
+              src="https://picsum.photos/40"
+              alt="Creator"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
           <div>
             <p className="text-xs font-mono text-[#FFFFFF3A]">Created by:</p>
             <p className="text-xs font-mono text-[#FFFFFF]">Marvin McKinney</p>
           </div>
         </div>
 
-        {/* Image Container - Now as a separate div below the creator info */}
+        {/* Image Container */}
         <div className="relative w-full flex-1 mb-3">
           <motion.div
             className="w-full h-full bg-[#2E2E2E] rounded-[20px]"
@@ -32,7 +38,11 @@ const TrendingNFTCard = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.1, duration: 0.5 }}
           >
-            {/* Placeholder for the NFT image */}
+            <img
+              src="https://picsum.photos/255/255"
+              alt="NFT"
+              className="w-full h-full object-cover rounded-[20px]"
+            />
           </motion.div>
 
           {/* Heart Icon Button */}
