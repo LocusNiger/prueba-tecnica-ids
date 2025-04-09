@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { FaEthereum } from "react-icons/fa";
 
-const ProductCard = () => {
+const ProductCard = ({ product }) => {
   const [isFavorite, setIsFavorite] = useState(false);
 
   const toggleFavorite = () => {
@@ -17,13 +17,13 @@ const ProductCard = () => {
           <img
             className="rounded-4xl w-full h-full object-cover"
             alt="NFT"
-            src="https://picsum.photos/326/338"
+            src={product.image}
           />
 
           {/* Badges arriba */}
           <div className="absolute top-3 right-3 flex space-x-2">
             <div className="bg-[#444444] flex items-center justify-center text-[#FFFFFF] font-manrope px-3.5 rounded-full text-[12px] font-semibold">
-              2h 4m 32s
+              {product.timeLeft}
             </div>
             <button
               onClick={toggleFavorite}
@@ -46,12 +46,12 @@ const ProductCard = () => {
 
         <div className="">
           <h3 className="text-white text-lg font-medium text-center">
-            Dayco serpentine belt
+            {product.title}
           </h3>
           <div className="flex items-center justify-center text-white">
             <FaEthereum className="mr-1" />
             <span className="text-white text-base font-medium text-center mb-1">
-              0,34
+              {product.price}
             </span>
           </div>
         </div>
