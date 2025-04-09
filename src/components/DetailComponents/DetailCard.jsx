@@ -12,6 +12,7 @@ import ChartComponent from "./ChartComponent";
 import SocialHoverCard from "./SocialHoverCard";
 import React, { useState } from "react";
 import DotsHoverCard from "./DotsHoverCard";
+import { motion } from "framer-motion";
 
 const DetailCard = () => {
   const [showSocialHoverCard, setShowSocialHoverCard] = useState(false);
@@ -22,7 +23,14 @@ const DetailCard = () => {
       {/* Contenedor product */}
       <div className="w-full h-[903px] gap-[33px] flex">
         {/* IMG */}
-        <div className="w-[540px] h-[903px] bg-[#2E2E2E] rounded-[20px]"></div>
+        <div className="w-[540px] h-[903px] bg-[#2E2E2E] rounded-[20px] overflow-hidden">
+          <img
+            src="https://picsum.photos/540/903"
+            alt="Vista previa del proyecto"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
         {/* CONTENIDO */}
         <div className="w-[537px] h-[903px] gap-[20px] flex flex-col">
           {/* TOP */}
@@ -37,34 +45,29 @@ const DetailCard = () => {
                   <RiVerifiedBadgeFill className="text-lg text-[#DDF247]" />
                 </div>
                 <div className="flex gap-2.5">
-                  <div className="relative">
-                    <IoShareSocialOutline
-                      className="text-lg text-[#919191] cursor-pointer"
-                      onMouseEnter={() => setShowSocialHoverCard(true)}
-                      onMouseLeave={() => setShowSocialHoverCard(false)}
-                    />
+                  {/* Share icon + Hover card */}
+                  <div
+                    className="relative"
+                    onMouseEnter={() => setShowSocialHoverCard(true)}
+                    onMouseLeave={() => setShowSocialHoverCard(false)}
+                  >
+                    <IoShareSocialOutline className="text-lg text-[#919191] cursor-pointer" />
                     {showSocialHoverCard && (
-                      <div
-                        className={`absolute top-full left-[-200px] mt-2 fade-in transition ${
-                          showSocialHoverCard ? "show" : ""
-                        }`}
-                      >
+                      <div className="absolute top-full left-[-200px] mt-2 fade-in transition show">
                         <SocialHoverCard />
                       </div>
                     )}
                   </div>
-                  <div className="relative">
-                    <PiDotsThreeOutline
-                      className="text-lg text-[#919191] cursor-pointer"
-                      onMouseEnter={() => setShowDotsHoverCard(true)}
-                      onMouseLeave={() => setShowDotsHoverCard(false)}
-                    />
+
+                  {/* Dots icon + Hover card */}
+                  <div
+                    className="relative"
+                    onMouseEnter={() => setShowDotsHoverCard(true)}
+                    onMouseLeave={() => setShowDotsHoverCard(false)}
+                  >
+                    <PiDotsThreeOutline className="text-lg text-[#919191] cursor-pointer" />
                     {showDotsHoverCard && (
-                      <div
-                        className={`absolute top-full left-[-200px] mt-2 fade-in transition ${
-                          showDotsHoverCard ? "show" : ""
-                        }`}
-                      >
+                      <div className="absolute top-full left-[-200px] mt-2 fade-in transition show">
                         <DotsHoverCard />
                       </div>
                     )}
@@ -78,7 +81,14 @@ const DetailCard = () => {
               </div>
               <div className="w-full h-[38px] mt-5">
                 <div className="flex items-center">
-                  <div className="w-9 h-9 rounded-full bg-[#333333] mr-2"></div>
+                  <div className="w-9 h-9 rounded-full overflow-hidden bg-[#333333] mr-2">
+                    <img
+                      src="https://picsum.photos/36/36"
+                      alt="Avatar"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
                   <div>
                     <p className="text-xs font-azeret-mono text-[#FFFFFF3A]">
                       Owned by:
@@ -92,24 +102,47 @@ const DetailCard = () => {
             </div>
             {/* SUBCONTENT */}
             <div className="w-full h-[39px] flex gap-2.5">
-              <div className="w-[111px] h-full border rounded-[12px] border-[#FFFFFF1F] px-3 py-2.5 flex items-center justify-between">
+              <motion.div
+                whileHover={{
+                  scale: 1.03,
+                  boxShadow: "0px 4px 12px rgba(255, 255, 255, 0.05)",
+                }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="w-[111px] h-full border rounded-[12px] border-[#FFFFFF1F] px-3 py-2.5 flex items-center justify-between cursor-default"
+              >
                 <MdOutlineRemoveRedEye className="text-[#FFFFFF] text-lg" />
                 <p className="text-[#FFFFFF] text-sm font-manrope font-semibold">
                   208 View
                 </p>
-              </div>
-              <div className="w-[162px] h-full border rounded-[12px] border-[#FFFFFF1F] px-3 py-2.5 flex items-center justify-between">
+              </motion.div>
+
+              <motion.div
+                whileHover={{
+                  scale: 1.03,
+                  boxShadow: "0px 4px 12px rgba(255, 255, 255, 0.05)",
+                }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="w-[162px] h-full border rounded-[12px] border-[#FFFFFF1F] px-3 py-2.5 flex items-center justify-between cursor-default"
+              >
                 <TbCircles className="text-[#FFFFFF] text-lg" />
                 <p className="text-[#FFFFFF] text-sm font-manrope font-semibold">
                   Top #2 Trending
                 </p>
-              </div>
-              <div className="w-[130px] h-full border rounded-[12px] border-[#FFFFFF1F] px-3 py-2.5 flex items-center justify-between">
+              </motion.div>
+
+              <motion.div
+                whileHover={{
+                  scale: 1.03,
+                  boxShadow: "0px 4px 12px rgba(255, 255, 255, 0.05)",
+                }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="w-[130px] h-full border rounded-[12px] border-[#FFFFFF1F] px-3 py-2.5 flex items-center justify-between cursor-default"
+              >
                 <FaRegHeart className="text-[#FFFFFF] text-lg" />
                 <p className="text-[#FFFFFF] text-sm font-manrope font-semibold">
                   10 Favorites
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
           {/* SALE */}
@@ -141,10 +174,17 @@ const DetailCard = () => {
                 </div>
               </div>
 
-              <button className="bg-[#DDF247] text-black font-semibold p-2.5 rounded-[14px] w-[216px] h-[50px] flex justify-center items-center gap-2">
+              <motion.button
+                whileHover={{
+                  scale: 1.03,
+                }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="bg-[#DDF247] text-black font-semibold p-2.5 rounded-[14px] w-[216px] h-[50px] flex justify-center items-center gap-2 cursor-pointer"
+              >
                 Place A Bid
                 <GoArrowUpRight size={18} />
-              </button>
+              </motion.button>
             </div>
           </div>
           {/* DESCRIPTION */}
