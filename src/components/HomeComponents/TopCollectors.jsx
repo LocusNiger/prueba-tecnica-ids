@@ -114,7 +114,9 @@ const TopCollectors = () => {
 
       {/* Texto "Top Collectors" sobre el fondo */}
       <div className="absolute inset-0 flex items-center justify-center -top-56">
-        <span className="text-[180px] font-bold opacity-20">Top Collector</span>
+        <span className="text-[180px] font-bold text-transparent bg-black/5 [background-clip:text] [-webkit-text-stroke:2px_white] opacity-5">
+          Top Collector
+        </span>
       </div>
 
       <div className="flex flex-col items-center justify-center w-full gap-[30px] h-full relative">
