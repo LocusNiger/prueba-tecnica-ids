@@ -72,14 +72,16 @@ const Header = () => {
       <div className="container max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-8">
           {/* Secondary logo */}
-          <motion.div
-            className="text-[#e4ff40] text-2xl font-bold"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3 }}
-          >
-            <img src="/Logo2.png" alt="Logo" className="h-[57px] w-[168px]" />
-          </motion.div>
+          <Link to="/home" className="hidden lg:block">
+            <motion.div
+              className="text-[#e4ff40] text-2xl font-bold"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              <img src="/Logo2.png" alt="Logo" className="h-[57px] w-[168px]" />
+            </motion.div>
+          </Link>
         </div>
 
         {/* Navigation */}
