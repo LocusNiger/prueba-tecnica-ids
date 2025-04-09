@@ -41,24 +41,16 @@ const StepByStep = () => {
         </h3>
       </div>
       {/* Cards */}
-      <div className="w-full h-[272px] flex gap-[30px] ">
-        <img
-          src="/FlechaVector.svg"
-          alt="Flecha"
-          className="absolute left-[270px]"
-        />
-        <img
-          src="/FlechaVector.svg"
-          alt="Flecha"
-          className="absolute left-[555px]"
-        />
-        <img
-          src="/FlechaVector.svg"
-          alt="Flecha"
-          className="absolute left-[840px]"
-        />
-        {steps.map((step) => (
-          <StepCard step={step} key={step.index} />
+      <div className="w-full h-[272px] flex items-center justify-center relative">
+        {steps.map((step, index) => (
+          <>
+            <StepCard step={step} key={step.index} />
+            {index < steps.length - 1 && (
+              <div className="relative h-[272px] w-[100px] flex flex-col items-center justify-start top-10">
+                <img src="/FlechaVector.svg" alt="Flecha" className="" />
+              </div>
+            )}
+          </>
         ))}
       </div>
     </div>
