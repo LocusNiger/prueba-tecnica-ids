@@ -110,13 +110,22 @@ const Carrusel = () => {
         >
           {/* Tarjetas de fondo izquierda */}
           <div className="absolute left-[calc(50%-550px)]">
-            <BackgroundCard position="left-1" />
+            <BackgroundCard
+              position="left-1"
+              product={products[(currentIndex - 1 + totalCards) % totalCards]}
+            />
           </div>
           <div className="absolute left-[calc(50%-450px)]">
-            <BackgroundCard position="left-2" />
+            <BackgroundCard
+              position="left-2"
+              product={products[(currentIndex - 2 + totalCards) % totalCards]}
+            />
           </div>
           <div className="absolute left-[calc(50%-350px)]">
-            <BackgroundCard position="left-3" />
+            <BackgroundCard
+              position="left-3"
+              product={products[(currentIndex - 3 + totalCards) % totalCards]}
+            />
           </div>
 
           {/* Tarjeta principal */}
@@ -126,13 +135,22 @@ const Carrusel = () => {
 
           {/* Tarjetas de fondo derecha */}
           <div className="absolute right-[calc(50%-550px)]">
-            <BackgroundCard position="right-1" />
+            <BackgroundCard
+              position="right-1"
+              product={products[(currentIndex + 1) % totalCards]}
+            />
           </div>
           <div className="absolute right-[calc(50%-450px)]">
-            <BackgroundCard position="right-2" />
+            <BackgroundCard
+              position="right-2"
+              product={products[(currentIndex + 2) % totalCards]}
+            />
           </div>
           <div className="absolute right-[calc(50%-350px)]">
-            <BackgroundCard position="right-3" />
+            <BackgroundCard
+              position="right-3"
+              product={products[(currentIndex + 3) % totalCards]}
+            />
           </div>
         </motion.div>
       </div>
