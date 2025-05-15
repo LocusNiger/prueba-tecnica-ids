@@ -1,12 +1,42 @@
-# React + Vite
+# Prueba Técnica - Inside Dark Studio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene la prueba técnica que realicé para Inside Dark Studio. El objetivo fue replicar un diseño provisto en Figma utilizando tecnologías modernas del ecosistema frontend. El foco estuvo puesto en la fidelidad visual, la interacción sutil mediante animaciones y una estructura de componentes limpia y reutilizable.
 
-Currently, two official plugins are available:
+## 🧪 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/) (Vite 6.2)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [React Router 7.4](https://reactrouter.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Framer Motion 12.6](https://www.framer.com/motion/)
 
-## Expanding the ESLint configuration
+## 📁 Estructura general
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Login (mockeado):** punto de entrada al sistema.
+- **Home:** muestra distintas secciones y componentes.
+- **Detail Page:** detalle de un NFT específico.
+- **Market:** replica la interfaz de un market de NFTs.
+- **FAQ:** preguntas frecuentes con animaciones desplegables.
+
+Todos los componentes están desarrollados desde cero siguiendo buenas prácticas de desarrollo, reutilización y separación de responsabilidades.
+
+## 🔗 Enlaces
+
+- **Deploy en Vercel:** [https://prueba-tecnica-ids.vercel.app/](https://prueba-tecnica-ids.vercel.app/)
+- **Repositorio:** [GitHub](https://github.com/LocusNiger/prueba-tecnica-ids/tree/main)
+- **Diseño original (Figma):** [FIgma](https://www.figma.com/design/qicRdnaDLYnbWNoquUP8Gu/Test---NFT-Marketplace?node-id=0-1&p=f&t=FeL5kZq53lxyrQQl-0)
+
+## 💬 Notas adicionales
+
+Una vez entregada esta prueba técnica, no recibí respuesta por parte del equipo de RRHH ni del desarrollador encargado de la revisión. Aun así, tomé esta oportunidad como una instancia de aprendizaje y práctica, reforzando mi experiencia con React y animaciones modernas con Framer Motion.
+
+---
+
+## 👨‍💻 Sobre mí
+
+Soy desarrollador frontend con experiencia en React, Tailwind CSS y Redux. Actualmente estoy aprendiendo Next.js y TypeScript, participando en proyectos colaborativos mientras busco oportunidades laborales que me permitan seguir creciendo profesionalmente.
+
+> Si querés contactarme, podés escribirme a [sanchezivan.798@gmail.com](mailto:sanchezivan.798@gmail.com) o por [LinkedIn](https://www.linkedin.com/in/tu-usuario-aqui).
+
+---
+
